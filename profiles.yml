@@ -1,0 +1,13 @@
+dbt_sandbox:
+  outputs:
+    dev:
+      dataset: dbt_schema_dataset
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: EU
+      method: oauth
+      priority: interactive
+      project: noted-point-384220
+      threads: 8
+      type: bigquery
+  target: dev
